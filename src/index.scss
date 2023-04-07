@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Belfast Grotesk";
+	src: url("./assets/fonts/BelfastGrotesk/Belfast\ Grotesk\ Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Belfast Grotesk";
+	src: url("./assets/fonts/BelfastGrotesk/Belfast\ Grotesk\ Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: bold;
+}
+
+body {
+	background-color: #1C3747 #919EAB;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #919EAB;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #013C51;
+}
+
+
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
