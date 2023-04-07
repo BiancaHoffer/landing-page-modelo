@@ -10,7 +10,7 @@ import ArrowBackOrange from '../../assets/arrow-orange-back.svg';
 import ArrowWhiteFront from '../../assets/arrow-white-front.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Swiper as SwiperType, Navigation, Pagination } from 'swiper';
+import { Swiper as SwiperType, Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 
 export function PartnerCompanies() {
@@ -36,7 +36,10 @@ export function PartnerCompanies() {
           className='flex items-center'
           loop={true}
           spaceBetween={40}
-          modules={[Navigation, Pagination]}
+          autoplay={{
+            delay: 5000,
+          }}
+          modules={[Navigation, Pagination, Autoplay]}
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}

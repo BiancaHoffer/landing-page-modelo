@@ -5,7 +5,7 @@ import iconTwitter from '../assets/icon-twitter.svg'
 
 export function Footer() {
   return (
-    <div className='bg-blue800 px-[40px]'>
+    <footer className='bg-blue800 px-[40px]'>
       <div className='pt-[130px] pb-[30px] bg-blue800 w-[100%] max-w-[1216px] m-auto lg:pt-[72px]'>
         <div className="w-[100%]" >
           <p className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px]">
@@ -52,6 +52,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

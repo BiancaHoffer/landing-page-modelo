@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import './App.scss';
 
 import { AboutUs } from './components/AboutUs';
@@ -14,13 +16,15 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Banner />
-			<Products />
-			<Services />
-			<FormEmail />
-			<AboutUs />
-			<Blog />
-			<PartnerCompanies />
+			<main>
+				<Banner />
+				<Products />
+				<Services />
+				<FormEmail />
+				<AboutUs />
+				<Blog />
+				<PartnerCompanies />
+			</main>
 			<Footer />
 		</>
 	);

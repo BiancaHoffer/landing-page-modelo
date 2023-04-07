@@ -1,29 +1,60 @@
+import { useState } from 'react';
+
 import logo from '../assets/logo.svg';
 import { NavLink } from './NavLink';
 
-export function Header() {
+import buttonDrawer from '../assets/buttonDrawer.svg';
+import buttonCloseDrawer from '../assets/buttonCloseDrawer.svg';
+
+export function Header({ }) {
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
-      <div className='bg-gray500 px-[40px]'>
-        <div className='bg-gray500 flex justify-between items-center w-full max-w-[1216px] m-auto py-[80px] gap-[80px] lg:py-[40px]
-        xl:justify-center
-      '>
-          <img src={logo} className='max-w-[20%] xl:max-w-[100%]' />
+      {openDrawer === true ? (
+        <div className=''>
+          <div className=''>
+            <button onClick={() => setOpenDrawer(!openDrawer)}>
+              <img src={buttonCloseDrawer} className='' />
+            </button>
+          </div>
 
-          <nav className='flex gap-[38px] max-w-[80%] 
-          xl:hidden
-        '>
-            <NavLink href='#' title='Sobre' />
-            <NavLink href='#' title='Produtos' />
-            <NavLink href='#' title='Serviços' />
-            <NavLink href='#' title='Equipe' />
-            <NavLink href='#' title='Contato' />
-          </nav>
+          <div className=''>
+            <nav className=''>
+              <NavLink href='#' title='Sobre' />
+              <NavLink href='#' title='Produtos' />
+              <NavLink href='#' title='Serviços' />
+              <NavLink href='#' title='Equipe' />
+              <NavLink href='#' title='Contato' />
+            </nav>
+          </div>
         </div>
-      </div>
+      ) : (
+        <></>
+      )}
 
-      <div className='bg-orange500 fizex w-[100%]'>
-      </div>
+      <header>
+        <div className='bg-gray500'>
+          <div className='w-[100%] max-w-[1256px] m-auto flex gap-[80px] justify-between items-center flex-row px-[20px] py-[80px] xl:gap-[40px]'>
+
+
+            <img src={logo} className='w-[100%] xl:w-[50%]' />
+
+
+
+            <button onClick={() => setOpenDrawer(!openDrawer)} className='hidden 900:flex '>
+              <img src={buttonDrawer} className='xl:w-[100%] xl:justify-center' />
+            </button>
+
+            <nav className='flex gap-[28px] 900:hidden xl:w-[100%] xl:justify-center'>
+              <NavLink href='#' title='Sobre' />
+              <NavLink href='#' title='Produtos' />
+              <NavLink href='#' title='Serviços' />
+              <NavLink href='#' title='Equipe' />
+              <NavLink href='#' title='Contato' />
+            </nav>
+          </div>
+        </div>
+      </header >
     </>
   )
 }

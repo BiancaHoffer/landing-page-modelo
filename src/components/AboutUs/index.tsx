@@ -4,9 +4,10 @@ import { CardAboutUs } from "./CardAboutUs";
 
 import arrowOrangeBack from '../../assets/arrow-orange-back.svg';
 import arrowBlueFront from '../../assets/arrow-blue-front.svg';
+import people from '../../assets/joan-naoj.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Swiper as SwiperType, Navigation, Pagination } from 'swiper';
+import { Swiper as SwiperType, Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 
 
@@ -28,8 +29,10 @@ export function AboutUs() {
             className='w-[100%] max-w-[1176px]'
             slidesPerView={4}
             loop={true}
-            modules={[Navigation, Pagination]}
-
+            autoplay={{
+              delay: 2000,
+            }}
+            modules={[Navigation, Pagination, Autoplay]}
             onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
@@ -52,56 +55,56 @@ export function AboutUs() {
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
             <SwiperSlide>
               <CardAboutUs
                 business='Developer'
                 name='Joan Naoj'
-                img=''
+                img={people}
               />
             </SwiperSlide>
           </Swiper>
