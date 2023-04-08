@@ -32,7 +32,7 @@ export function Banner() {
       >
         <SwiperSlide>
           <div className='bg-gray500 px-[40px]'>
-            <div className='flex flex-row w-[100%] max-w-[1216px] m-auto lg:flex-col lg:gap-[80px]'>
+            <div className='flex flex-row w-[100%] max-w-[1216px] m-auto lg:flex-col lg:gap-[100px]'>
               <div className=' w-[50%] m-auto flex flex-col gap-[10px] lg:w-[100%] lg:items-center'>
                 <p className='uppercase text-blue750 mb-[12px] text-[14px] tracking-[0.7rem] md:text-[12px] lg:text-center'>
                   LOREN IPSUM DOLOR SLIDE 1
@@ -70,8 +70,8 @@ export function Banner() {
             </div>
           </div>
         </SwiperSlide>
-        <div className='w-[100%] px-[40px] bg-gray500'>
-          <div className='bg-gray500 flex gap-[53px] w-[100%] max-w-[1176px] m-auto mt-[20px] xl:justify-center xl:mt-[40px]'>
+        <div className='w-[100%] px-[40px] bg-gray500 mt-[100px] lg:mt-[80px]'>
+          <div className='bg-gray500 flex gap-[53px] w-[100%] max-w-[1176px] m-auto lg:justify-center'>
             <button onClick={() => swiperRef.current?.slidePrev()}>
               <img src={arrowBack} className='h-[32.83px] w-[64.83px]' />
             </button>
