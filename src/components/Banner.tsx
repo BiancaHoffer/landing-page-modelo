@@ -14,7 +14,7 @@ export function Banner() {
   const swiperRef = useRef<SwiperType>();
 
   return (
-    <div className=' w-[100%] m-auto bg-gray500 pb-[130px] lg:pb-[72px] lg:pt-[32px]'>
+    <div className=' w-[100%] m-auto bg-gray500 pt-[32px] pb-[130px] lg:pb-[72px] lg:pt-[32px]'>
       <Swiper
         className='bg-gray500'
         slidesPerView={1}
@@ -31,9 +31,9 @@ export function Banner() {
         }}
       >
         <SwiperSlide>
-          <div className='bg-gray500 pr-[40px] pl-[40px]'>
+          <div className='bg-gray500 px-[40px]'>
             <div className='flex flex-row w-[100%] max-w-[1216px] m-auto lg:flex-col lg:gap-[80px]'>
-              <div className='w-[50%] m-auto flex flex-col gap-[10px] lg:w-[100%] lg:items-center'>
+              <div className=' w-[50%] m-auto flex flex-col gap-[10px] lg:w-[100%] lg:items-center'>
                 <p className='uppercase text-blue750 mb-[12px] text-[14px] tracking-[0.7rem] md:text-[12px] lg:text-center'>
                   LOREN IPSUM DOLOR SLIDE 1
                 </p>
