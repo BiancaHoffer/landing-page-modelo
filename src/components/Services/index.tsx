@@ -17,7 +17,7 @@ export function Services() {
   const swiperRef = useRef<SwiperType>();
   return (
     <>
-      <div className="bg-blue800 py-[130px] px-[40px] lg:py-[72px]">
+      <div id='services' className="bg-blue800 py-[130px] px-[40px] lg:py-[72px]">
         <div className="bg-blue800 w-[100%] max-w-[1216px] m-auto">
           <div>
             <p className='uppercase tracking-[0.7rem] text-white text-[14px] leading-[130%] mb-1'>

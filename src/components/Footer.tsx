@@ -1,17 +1,20 @@
-import iconFacbook from '../assets/icon-facebook.svg'
-import iconLinkedin from '../assets/icon-linkedin.svg'
-import iconInstagram from '../assets/icon-instagram.svg'
-import iconTwitter from '../assets/icon-twitter.svg'
+import iconFacbook from '../assets/icon-facebook.svg';
+import iconLinkedin from '../assets/icon-linkedin.svg';
+import iconInstagram from '../assets/icon-instagram.svg';
+import iconTwitter from '../assets/icon-twitter.svg';
+import arrowWhiteTop from '../assets/arrow-white-top.svg';
+
+import { Link } from 'react-scroll'
 
 export function Footer() {
   return (
-    <footer className='bg-blue800 px-[40px]'>
+    <footer id='contact' className='bg-blue800 px-[40px]'>
       <div className='pt-[130px] pb-[30px] bg-blue800 w-[100%] max-w-[1216px] m-auto lg:pt-[72px]'>
         <div className="w-[100%]" >
           <p className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px]">
             Contato
           </p>
-          <h1 className="text-orange500 text-[42px] font-[700] leading-[50px] text-center">
+          <h1 className="text-orange500 text-[42px] font-[700] leading-[50px] text-center md:text-[32px] sm:text-[26px]">
             contato@we-rtek.com.br
           </h1>
 
@@ -19,7 +22,7 @@ export function Footer() {
             sm:flex-col sm:mb-[80px]
           ">
             <div className='sm:mb-[40px]'>
-              <h3 className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px] mb-[12px]">
+              <h3 className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px] mb-[12px] md:text-[12px]">
                 endereço
               </h3>
               <p className="text-white text-center">
@@ -28,7 +31,7 @@ export function Footer() {
               </p>
             </div>
             <div className="text-white text-center">
-              <h3 className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px] mb-[12px]">
+              <h3 className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px] mb-[12px] md:text-[12px]">
                 telefone
               </h3>
               <p>
@@ -43,11 +46,18 @@ export function Footer() {
             <div className="text-white sm:text-center">
               We R Tek, 2022. © Todos os direitos reservados.
             </div>
-            <div className="flex gap-[32px]">
-              <span><img src={iconFacbook} /></span>
-              <span><img src={iconLinkedin} /></span>
-              <span><img src={iconInstagram} /></span>
-              <span><img src={iconTwitter} /></span>
+            <div className="flex gap-[32px] items-center">
+              <a className='cursor-pointer'><img src={iconFacbook} /></a>
+              <a className='cursor-pointer'><img src={iconLinkedin} /></a>
+              <a className='cursor-pointer'><img src={iconInstagram} /></a>
+              <a className='cursor-pointer'><img src={iconTwitter} /></a>
+              <Link
+                to='/'
+                spy={true} smooth={true} offset={0} duration={500}
+                className='bg-orange500 py-[12px] px-[8px] rounded-sm  cursor-pointer hover:bg-gray500 transition-colors'
+              >
+                <img src={arrowWhiteTop} className='w-[30px]' />
+              </Link>
             </div>
           </div>
         </div>

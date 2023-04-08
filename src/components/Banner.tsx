@@ -51,11 +51,11 @@ export function Banner() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray500 pr-[40px] pl-[40px]">
-            <div className='flex flex-row w-[100%] max-w-[1216px] m-auto pb-[37px] lg:flex-col xl:gap-[40px]'>
-              <div className='w-[50%] m-auto flex flex-col lg:w-[100%] lg:items-center'>
+          <div className='bg-gray500 px-[40px]'>
+            <div className='flex flex-row w-[100%] max-w-[1216px] m-auto lg:flex-col lg:gap-[100px]'>
+              <div className=' w-[50%] m-auto flex flex-col gap-[10px] lg:w-[100%] lg:items-center'>
                 <p className='uppercase text-blue750 mb-[12px] text-[14px] tracking-[0.7rem] md:text-[12px] lg:text-center'>
-                  LOREN IPSUM DOLOR SLIDE 2
+                  LOREN IPSUM DOLOR SLIDE 1
                 </p>
                 <h1 className='text-white font-black text-[48px] tracking-[0.01rem] leading-[130%] font-sans mb-[48px] md:text-[36px] sm:text-[34px] lg:text-center'>
                   Donec imperdiet volutpat sem, eu tempus felis est hendrerit eu.
@@ -63,7 +63,7 @@ export function Banner() {
                 <Button name='Saiba mais' />
               </div>
               <div className='flex justify-center items-center w-[50%] lg:w-[100%]'>
-                <img src={image} className='w-[100%] self-center ' />
+                <img src={image} className='w-[100%] self-center' />
               </div>
             </div>
             <div className='bg-orange500 absolute top-0 bottom-0 right-0 w-[140px] h-screen hidden'>

@@ -16,7 +16,7 @@ export function AboutUs() {
 
   return (
     <>
-      <div className='bg-gray100 px-[40px]'>
+      <div id='aboutUs' className='bg-gray100 px-[40px]'>
         <div className='flex justify-center flex-col bg-gray100 w-[100%] py-[130px] max-w-[1216px] m-auto lg:py-[72px]'>
           <p className='uppercase tracking-[0.7rem] text-blue800 text-[14px] leading-[130%] mb-1'>
             LOREN IPSUM DOLOR
