@@ -8,12 +8,12 @@ import { NavLink } from '../NavLink';
 export function Header({ setIsOpen }) {
   return (
     <header id='/' className='w-[100%] bg-gray500'>
-      <div className="bg-gray500 w-[100%] max-w-[1300px] m-auto px-[40px] pb-[40px] pt-[80px] flex justify-between items-center p-4">
+      <div className="bg-gray500 w-[100%] max-w-[1300px] m-auto px-[40px] pb-[40px] pt-[80px] flex justify-between gap-[20px] flex-wrap items-center p-4">
         <Link
           to='/'
           spy={true} smooth={true} offset={0} duration={500}
         >
-          <img src={logo} className='cursor-pointer w-auto xl:w-[30%] md:w-[50%]' />
+          <img src={logo} className='cursor-pointer w-auto' />
         </Link>
 
         <button

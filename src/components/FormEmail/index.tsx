@@ -7,13 +7,11 @@ export function FormEmail() {
         <h3 className='text-[26px] text-center font-[600] text-white max-w-[600px]'>
           Phasellus mattis massa id magna porta lacinia varius ac sem morbi risus
         </h3>
-        <form action="" className='flex justify-center items-center gap-[22px] w-[80%]
-          sm:flex-col
-        '>
+        <form action="" className='flex justify-center items-center gap-[22px] sm:flex-col'>
           <input
             type="email"
             placeholder='Insira seu e-maio'
-            className='px-[40px] w-[100%] h-[96px] rounded-[48px] shadow-xl text-[18px] text-blue750 focus:outline-none focus:shadow-outline placeholder-blue750'
+            className=' px-[40px] w-[100%] h-[96px] rounded-[48px] shadow-xl text-[18px] text-blue750 focus:outline-none focus:shadow-outline placeholder-blue750'
           />
           <Button name='Assine' />
         </form>
