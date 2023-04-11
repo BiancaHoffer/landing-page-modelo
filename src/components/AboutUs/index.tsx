@@ -10,7 +10,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType, Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 
-
 export function AboutUs() {
   const swiperRef = useRef<SwiperType>();
 

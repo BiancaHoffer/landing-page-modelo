@@ -1,8 +1,14 @@
 
+import { Dispatch, ReactNode, SetStateAction } from 'react';
 import buttonClose from '../../assets/buttonCloseDrawer.svg'
 
-// @ts-ignore
-export function Drawer({ children, isOpen, setIsOpen }) {
+interface DrawerProps {
+  children: ReactNode;
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>
+}
+
+export function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
   return (
     <main
       className={

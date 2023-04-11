@@ -1,5 +1,3 @@
-import { ButtonHTMLAttributes, ReactElement } from 'react';
-
 interface ButtonProps {
   name: string;
   onClick?: () => void;
