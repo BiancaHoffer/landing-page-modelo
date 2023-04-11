@@ -41,12 +41,8 @@ function App() {
 	return (
 		<>
 			<div className='flex'>
-
-
-
-				<div className='w-[90%] bg-gray500'>
+				<div className='w-[90%] bg-gray500 xl:w-[100%]'>
 					<Header setIsOpen={setIsOpenDrawer} />
-
 					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
 						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
 							<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
@@ -56,7 +52,6 @@ function App() {
 							<NavLink href='contact' title='Contato' onClick={() => setIsOpenDrawer(false)} />
 						</nav>
 					</Drawer>
-
 					<main>
 						<Banner />
 						<Products />
@@ -68,8 +63,7 @@ function App() {
 					</main>
 					<Footer />
 				</div>
-
-				<div className='bg-orange500 w-[10%] h-auto '>
+				<div className='bg-orange500 w-[10%] h-auto xl:hidden'>
 					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
 						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
 							<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
