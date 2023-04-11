@@ -4,7 +4,7 @@ import iconInstagram from '../assets/icon-instagram.svg';
 import iconTwitter from '../assets/icon-twitter.svg';
 import arrowWhiteTop from '../assets/arrow-white-top.svg';
 
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 
 export function Footer() {
   return (
@@ -53,7 +53,7 @@ export function Footer() {
               <a className='cursor-pointer'><img src={iconTwitter} /></a>
               <Link
                 to='/'
-                spy={true} smooth={true} offset={0} duration={500}
+                spy={true} smooth={true} offset={-200} duration={500}
                 className='bg-orange500 py-[12px] px-[8px] rounded-sm  cursor-pointer hover:bg-orange200 transition-colors'
               >
                 <img src={arrowWhiteTop} className='w-[30px]' />

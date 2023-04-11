@@ -14,7 +14,7 @@ export function Banner() {
   const swiperRef = useRef<SwiperType>();
 
   return (
-    <div className='w-[100%] m-auto mt-[150px] bg-gray500 pt-[32px] pb-[130px] lg:pb-[72px] lg:pt-[32px]'>
+    <div id='/' className='w-[100%] m-auto mt-[150px] bg-gray500 pt-[32px] pb-[130px] lg:pb-[72px] lg:pt-[32px]'>
       <Swiper
         className='bg-gray500'
         slidesPerView={1}
