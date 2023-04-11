@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './App.scss';
+import buttonDrawer from './assets/buttonDrawer.svg';
 
 /*Aplication*/
 import { AboutUs } from './components/AboutUs';
@@ -8,7 +9,6 @@ import { Banner } from './components/Banner';
 import { Blog } from './components/Blog';
 import { Footer } from './components/Footer';
 import { FormEmail } from './components/FormEmail';
-
 import { PartnerCompanies } from './components/PartnerCompanies';
 import { Products } from './components/Products';
 import { Services } from './components/Services';
@@ -33,16 +33,27 @@ import { Button } from './components/Button';
 import { Input } from './OthersComponents/Input';
 import { ButtonsArrow } from './OthersComponents/ButtonsArrow';
 
-
-
 function App() {
 	const [isOpenDrawer, setIsOpenDrawer] = useState(false);
+	const [scrollActive, setScrollAtvite] = useState(false);
+
+	useEffect(() => {
+		function scrollPosition() {
+			if (window.scrollY > 20) {
+				setScrollAtvite(true)
+			} else (
+				setScrollAtvite(false)
+			)
+		}
+
+		window.addEventListener('scroll', scrollPosition)
+	}, [])
 
 	return (
 		<>
 			<div className='flex'>
-				<div className='w-[90%] bg-gray500 xl:w-[100%]'>
-					<Header setIsOpen={setIsOpenDrawer} />
+				<div className='w-[94%] bg-gray500 lg:w-[100%]'>
+					<Header setIsOpen={setIsOpenDrawer} scrollActive={scrollActive} />
 					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
 						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
 							<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
@@ -63,27 +74,24 @@ function App() {
 					</main>
 					<Footer />
 				</div>
-				<div className='bg-orange500 w-[10%] h-auto xl:hidden'>
-					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
-						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
-							<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='products' title='Produtos' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='services' title='Serviços' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='aboutUs' title='Equipe' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='contact' title='Contato' onClick={() => setIsOpenDrawer(false)} />
-						</nav>
-					</Drawer>
+				<div className='z-30 bg-gradient-to-b from-orange500 via-transparent to-blue800 w-[6%] flex justify-center h-auto pt-[50px] px-[20px] lg:hidden'>
+					<button
+						className="fixed z-20 flex text-white rounded py-1"
+						onClick={() => setIsOpenDrawer(true)}
+					>
+						<img src={buttonDrawer} className='xl:w-[100%] xl:justify-center' />
+					</button>
 				</div>
-
 			</div>
 
+			{/*Others components*/}
 			<div>
 				<h2 className='w-[100%] text-center text-[40px] text-orange500 font-[900] py-[80px] px-[40px]'>Others Components</h2>
 				<Modal />
 				<ReviewSlide />
 				<Slide />
 
-				<div className='flex lg:flex-col'>
+				<div className='flex xl:flex-col'>
 					<div className='bg-gray150 w-[100%] flex flex-col items-center gap-[40px] p-[40px]'>
 						<Input type='text' placeholder='Your placeholder' />
 						<Button name='Button' />

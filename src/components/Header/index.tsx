@@ -5,10 +5,10 @@ import { NavLink } from '../NavLink';
 
 
 //@ts-ignore
-export function Header({ setIsOpen }) {
+export function Header({ setIsOpen, scrollActive }) {
   return (
-    <header id='/' className='w-[100%] bg-gray500'>
-      <div className="bg-gray500 w-[100%] max-w-[1300px] m-auto px-[40px] pb-[40px] pt-[80px] flex justify-between gap-[20px] items-center p-4">
+    <header id='/' className={`transition-colors ${scrollActive === true ? 'bg-gray500 shadow-lg' : 'bg-none'} fixed z-10 w-[100%]`}>
+      <div className={` bg-none w-[100%] max-w-[1300px] m-auto px-[40px] pb-[20px] pt-[50px] flex justify-between gap-[20px] items-center p-4`}>
         <Link
           to='/'
           spy={true} smooth={true} offset={0} duration={500}
@@ -17,18 +17,11 @@ export function Header({ setIsOpen }) {
         </Link>
 
         <button
-          className="hidden xl:flex text-white rounded py-1"
+          className="hidden lg:flex text-white rounded py-1"
           onClick={() => setIsOpen(true)}
         >
           <img src={buttonDrawer} className='xl:w-[100%] xl:justify-center' />
         </button>
-        <nav className='xl:hidden flex gap-[32px]'>
-          <NavLink href='#' title='Sobre' />
-          <NavLink href='products' title='Produtos' />
-          <NavLink href='services' title='Serviços' />
-          <NavLink href='aboutUs' title='Equipe' />
-          <NavLink href='contact' title='Contato' />
-        </nav>
       </div>
     </header>
   )
