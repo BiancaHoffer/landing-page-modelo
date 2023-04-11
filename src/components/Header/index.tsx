@@ -17,7 +17,7 @@ export function Header({ setIsOpen }) {
         </Link>
 
         <button
-          className="hidden xl:flex text-white rounded py-1"
+          className="flex text-white rounded py-1"
           onClick={() => setIsOpen(true)}
         >
           <img src={buttonDrawer} className='xl:w-[100%] xl:justify-center' />

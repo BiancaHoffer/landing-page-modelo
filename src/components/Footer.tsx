@@ -14,7 +14,7 @@ export function Footer() {
           <p className="uppercase text-white text-[14px] tracking-[0.7rem] text-center pb-[0.27px]">
             Contato
           </p>
-          <h1 className="text-orange500 text-[42px] font-[700] leading-[50px] text-center md:text-[32px] sm:text-[26px]">
+          <h1 className="text-orange500 text-[42px] font-[700] leading-[50px] text-center md:text-[32px] sm:text-[22px]">
             contato@we-rtek.com.br
           </h1>
 
@@ -54,7 +54,7 @@ export function Footer() {
               <Link
                 to='/'
                 spy={true} smooth={true} offset={0} duration={500}
-                className='bg-orange500 py-[12px] px-[8px] rounded-sm  cursor-pointer hover:bg-gray500 transition-colors'
+                className='bg-orange500 py-[12px] px-[8px] rounded-sm  cursor-pointer hover:bg-orange200 transition-colors'
               >
                 <img src={arrowWhiteTop} className='w-[30px]' />
               </Link>

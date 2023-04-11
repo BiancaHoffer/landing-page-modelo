@@ -29,7 +29,7 @@ export function Services() {
           </div>
 
           <div className="flex xl:flex-col justify-center items-center">
-            <div className="flex w-[100%] lg:flex-col">
+            <div className="flex w-[90%] lg:flex-col md:w-[100%]">
               <Swiper
                 className='bg-blue800 flex w-[100%]'
                 slidesPerView={2}
