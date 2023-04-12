@@ -10,7 +10,7 @@ export function FormEmail() {
         <form action="" className='flex justify-center items-center gap-[22px] sm:flex-col'>
           <input
             type="email"
-            placeholder='Insira seu e-maio'
+            placeholder='Insira seu e-mail'
             className=' px-[40px] w-[100%] h-[96px] rounded-[48px] shadow-xl text-[18px] text-blue750 focus:outline-none focus:shadow-outline placeholder-blue750'
           />
           <Button name='Assine' />
