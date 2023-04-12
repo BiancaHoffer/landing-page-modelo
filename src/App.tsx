@@ -51,32 +51,26 @@ function App() {
 
 	return (
 		<>
-			<div className='flex'>
-				<div className='w-[94%] bg-gray500 xl:w-[100%]'>
-					<Header setIsOpen={setIsOpenDrawer} scrollActive={scrollActive} />
-					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
-						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
-							<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='products' title='Produtos' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='services' title='Serviços' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='aboutUs' title='Equipe' onClick={() => setIsOpenDrawer(false)} />
-							<NavLink href='contact' title='Contato' onClick={() => setIsOpenDrawer(false)} />
-						</nav>
-					</Drawer>
-					<main>
-						<Banner />
-						<Products />
-						<Services />
-						<FormEmail />
-						<AboutUs />
-						<Blog />
-						<PartnerCompanies />
-					</main>
-					<Footer />
-				</div>
-
-				<div className='z-30 bg-gradient-to-b from-orange500 via-transparent to-blue800 w-[6%] h-auto xl:hidden' />
-			</div>
+			<Header setIsOpen={setIsOpenDrawer} scrollActive={scrollActive} />
+			<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
+				<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
+					<NavLink href='#' title='Sobre' onClick={() => setIsOpenDrawer(false)} />
+					<NavLink href='products' title='Produtos' onClick={() => setIsOpenDrawer(false)} />
+					<NavLink href='services' title='Serviços' onClick={() => setIsOpenDrawer(false)} />
+					<NavLink href='aboutUs' title='Equipe' onClick={() => setIsOpenDrawer(false)} />
+					<NavLink href='contact' title='Contato' onClick={() => setIsOpenDrawer(false)} />
+				</nav>
+			</Drawer>
+			<main>
+				<Banner />
+				<Products />
+				<Services />
+				<FormEmail />
+				<AboutUs />
+				<Blog />
+				<PartnerCompanies />
+			</main>
+			<Footer />
 
 			{/*Others components*/}
 			<div>

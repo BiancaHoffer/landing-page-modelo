@@ -15,7 +15,7 @@ export function Footer() {
             Contato
           </p>
           <h1 className="text-orange500 text-[42px] font-[700] leading-[50px] text-center md:text-[32px] sm:text-[22px]">
-            contato@we-rtek.com.br
+            emailo@email.com
           </h1>
 
           <div className="flex justify-around mt-[50px] mb-[130px]
@@ -44,7 +44,7 @@ export function Footer() {
             sm:flex-col sm:justify-centen sm:items-center sm:gap-[20px]
           ">
             <div className="text-white sm:text-center">
-              We R Tek, 2022. © Todos os direitos reservados.
+              marca, 2022. © Todos os direitos reservados.
             </div>
             <div className="flex gap-[32px] items-center">
               <a className='cursor-pointer'><img src={iconFacbook} /></a>
