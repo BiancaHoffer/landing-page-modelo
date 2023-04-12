@@ -45,7 +45,7 @@ export function Input({
           placeholder={placeholder}
           className={`${variantBgInput[bgInput]} ${variantTextColor[textColor]} font-[14px] rounded-[40px] border-none outline-none w-[90%]`}
         />
-        <button className={`${variantButtonColor[buttonColor]} flex justify-center items-center w-[40px] h-[40px] rounded-[100%]`}>
+        <button className={`${variantButtonColor[buttonColor]} flex justify-center items-center min-w-[40px] h-[40px] rounded-[100%]`}>
           <img src={arrowSend} />
         </button>
       </div>
