@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
-
 import './App.scss';
-import buttonDrawer from './assets/buttonDrawer.svg';
 
 /*Aplication*/
 import { AboutUs } from './components/AboutUs';
@@ -22,7 +20,7 @@ import { ReviewSlide } from './OthersComponents/ReviewSlide';
 import { Slide } from './OthersComponents/Slide';
 import { Tabs } from './OthersComponents/TabsExample';
 import { Switch } from './OthersComponents/Switch';
-import { Checkbox } from './OthersComponents/CheckBox';
+
 import { RadioGroup } from './OthersComponents/RadioGroup';
 import { ProgressBar } from './OthersComponents/Progress';
 import { TabsCircle } from './OthersComponents/TabsCircle';
@@ -32,6 +30,7 @@ import { Pagination } from './OthersComponents/Pagination';
 import { Button } from './components/Button';
 import { Input } from './OthersComponents/Input';
 import { ButtonsArrow } from './OthersComponents/ButtonsArrow';
+import { Checkbox } from './OthersComponents/Checkbox';
 
 function App() {
 	const [isOpenDrawer, setIsOpenDrawer] = useState(false);
@@ -92,11 +91,11 @@ function App() {
 						<Button name='Button' disabled={true} />
 						<Pagination />
 						<TabsLine />
+						<Checkbox />
 						<TabsCircle />
 						<Tabs />
 						<ProgressBar progressPercentage={40} />
 						<Switch />
-						<Checkbox />
 						<Dropdown />
 						<RadioGroup />
 						<ButtonsArrow />
