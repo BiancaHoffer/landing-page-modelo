@@ -15,7 +15,7 @@ export function Header({ setIsOpen, scrollActive }: HeaderProps) {
       <div className={` bg-none w-[100%] max-w-[1300px] m-auto pl-[40px] pr-[6%] lg:pr-[40px] pb-[20px] pt-[50px] flex gap-[18px] justify-between items-center p-4`}>
         <Link
           to='/'
-          spy={true} smooth={true} offset={0} duration={500}
+          spy={true} smooth={true} offset={-200} duration={500}
         >
           <img src={logo} className='cursor-pointer w-auto' />
         </Link>
