@@ -52,7 +52,7 @@ function App() {
 	return (
 		<>
 			<div className='flex'>
-				<div className='w-[94%] bg-gray500 lg:w-[100%]'>
+				<div className='w-[94%] bg-gray500 xl:w-[100%]'>
 					<Header setIsOpen={setIsOpenDrawer} scrollActive={scrollActive} />
 					<Drawer isOpen={isOpenDrawer} setIsOpen={setIsOpenDrawer}>
 						<nav className='flex-col h-[100%] justify-center items-center gap-[60px] flex'>
@@ -74,14 +74,8 @@ function App() {
 					</main>
 					<Footer />
 				</div>
-				<div className='z-30 bg-gradient-to-b from-orange500 via-transparent to-blue800 w-[6%] flex justify-center h-auto pt-[50px] px-[20px] lg:hidden'>
-					<button
-						className="fixed z-20 flex text-white rounded py-1"
-						onClick={() => setIsOpenDrawer(true)}
-					>
-						<img src={buttonDrawer} className='xl:w-[100%] xl:justify-center' />
-					</button>
-				</div>
+
+				<div className='z-30 bg-gradient-to-b from-orange500 via-transparent to-blue800 w-[6%] h-auto xl:hidden' />
 			</div>
 
 			{/*Others components*/}

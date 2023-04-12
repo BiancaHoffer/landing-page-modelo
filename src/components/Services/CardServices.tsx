@@ -9,7 +9,7 @@ interface CardServicesProps {
 export function CardServices({ img, title, text }: CardServicesProps) {
   return (
     <div className="flex flex-col border-[2px] border-orange500 rounded-[50px] px-[32px] md:px-[16px] py-[72px] md:py-[40px] w-[100%] lg:items-center">
-      <img src={img} className='w-[147px] h-[111.33px] mb-[78px] sm:w-[120px] md:mb-[40px]' />
+      <img src={img} className='w-[147px] h-[111.33px] mb-[78px] sm:w-[100px] md:mb-[16px]' />
       <div className='mb-[100px] md:mb-[52px]'>
         <h3 className='text-[26px] font-[600] text-white mb-[50px] lg:text-center'>
           {title}
