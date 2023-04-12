@@ -17,7 +17,7 @@ export function Header({ setIsOpen, scrollActive }: HeaderProps) {
           to='/'
           spy={true} smooth={true} offset={-200} duration={500}
         >
-          <span className='text-[40px] text-white'>LOGO</span>
+          <span className='cursor-pointer text-[40px] text-white'>LOGO</span>
         </Link>
 
         <button
