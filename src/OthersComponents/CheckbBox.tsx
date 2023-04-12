@@ -32,7 +32,7 @@ export function Checkbox({
     <div>
       <label className="cursor-pointer relative">
         <input type="checkbox" className={`bg-gray50 ${variantsBgCheckboxColor[variantBgCheckboxColor]} ${variantsCheckboxColor[variantCheckboxColor]} peer appearance-none  w-[24px] h-[24px] rounded-sm `} />
-        <FiCheck width={22} color={`${variantsIconColor[variantIconColor]}`} className='absolute left-1 top-[1px] text-opacity-0' />
+        <FiCheck width={22} color={`${variantsIconColor[variantIconColor]}`} className='absolute left-1 bottom-[9px] right-1 text-opacity-0' />
       </label>
     </div>
   )
