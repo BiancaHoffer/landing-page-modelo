@@ -30,7 +30,8 @@ import { Pagination } from './OthersComponents/Pagination';
 import { Button } from './components/Button';
 import { Input } from './OthersComponents/Input';
 import { ButtonsArrow } from './OthersComponents/ButtonsArrow';
-import { Checkbox } from './OthersComponents/Checkbox';
+import { Checkbox } from './OthersComponents/CheckbBox';
+
 
 function App() {
 	const [isOpenDrawer, setIsOpenDrawer] = useState(false);
