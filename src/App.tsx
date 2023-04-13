@@ -74,7 +74,7 @@ function App() {
 
 			{/*Others components*/}
 			<div>
-				<h2 className='w-[100%] text-center text-[40px] text-orange500 font-[900] py-[80px] px-[40px]'>Others Components</h2>
+				<h2 className='w-[100%] text-center text-[40px] text-orange500 font-[900] py-[80px] px-[40px]'>Outros componentes</h2>
 				<Modal />
 				<ReviewSlide />
 				<Slide />

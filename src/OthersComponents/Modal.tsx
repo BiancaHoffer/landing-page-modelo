@@ -18,7 +18,7 @@ export function Modal() {
     <>
       <div className="inset-0 flex items-center justify-center">
         <Button
-          name='Open modal'
+          name='Abrir modal'
           onClick={() => setIsOpen(true)}
         />
       </div>
