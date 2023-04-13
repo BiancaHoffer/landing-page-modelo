@@ -86,11 +86,11 @@ function App() {
 						<Button name='Button' disabled={true} />
 						<Pagination />
 						<TabsLine />
-						<Checkbox />
 						<TabsCircle />
 						<Tabs />
 						<ProgressBar progressPercentage={40} />
 						<Switch />
+						<Checkbox />
 						<Dropdown />
 						<RadioGroup />
 						<ButtonsArrow />
